@@ -27,7 +27,7 @@ class PostController extends Controller
     public function store(Request $request)
     {
         //
-        $postData = $request->only(['title', 'content']);
+        $postData = $request->only(['title', 'content', 'category_id']);
         $translations = $request->translations;
 
         $newPost = Post::create($postData);

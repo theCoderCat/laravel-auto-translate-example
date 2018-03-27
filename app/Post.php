@@ -1,9 +1,8 @@
 <?php
 
 namespace App;
-use Illuminate\Database\Eloquent\Model;
 
-class Post extends BaseModel
+class Post extends TranslatableModel
 {
     //
     public $translatedAttributes = [
@@ -11,7 +10,6 @@ class Post extends BaseModel
       'content'
     ];
     protected $fillable = [
-      'title',
-      'content'
+      'category_id',
     ];
 }

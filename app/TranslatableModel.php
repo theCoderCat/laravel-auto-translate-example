@@ -4,7 +4,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Dimsav\Translatable\Translatable;
 
-class BaseModel extends Model 
+class TranslatableModel extends Model 
 {
     use Translatable;
     //
